@@ -270,7 +270,7 @@ span {
   #about {
     text-align: center;
     justify-content: center;
-    border: solid red;
+
     font-size: 30px;
     align-items: center;
     gap: 2rem;
@@ -783,7 +783,5 @@ margin: 20px;
       bottom: -200px;
       left: -20px;
     }
-    
     .shape-2 { left: 60px; }
-
   }
