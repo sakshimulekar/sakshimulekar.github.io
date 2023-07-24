@@ -7,6 +7,7 @@
   outline: none;
   scroll-behavior: smooth;
   font-family: var(--fontFamily-noto_sans);
+
 }
 html {
   font-size: 62.5%;
@@ -14,10 +15,12 @@ html {
 }
 
 body {
- background-image: url(./images/pngtree-blue-gradient-low-poly-background-image_398642.jpg);
-  color: black;
-  background-size: cover;
-  /* color: var(--text-shadow-blue); */
+  background-color: #041b24;
+  color: var(--text-color);
+  /* color: var(--text-shadow-blue); */ 
+
+
+  
 
 }
 
@@ -29,14 +32,14 @@ body {
   
      
     /** Background colors */
-    --bg-wild-blue-yonder: hsla(216, 33%, 68%, 1);
-    --bg-carolina-blue: rgba(170, 177, 202, 0.838);
-    --bg-prussian-blue: hsla(216, 33%, 20%, 1);
-    --bg-oxford-blue: rgb(7, 8, 20);
-    --bg-oxford-blue-2: hsla(222, 47%, 11%, 1);
+    --bg-wild-blue-yonder: rgb(96, 157, 248);
+    --bg-carolina-blue: rgb(3, 241, 249);
+    --bg-prussian-blue: rgb(44, 98, 172);
+    --bg-oxford-blue: #041b24;
+    --bg-oxford-blue-2:#041b24;
     --bg-color: #1f242d;
     --second-bg-color: #323946;
-    --main-color: rgb(0, 255, 153);
+    --main-color: rgb(115, 255, 0);
   
     /** Text colors */
     --text-color: #fff;
@@ -62,7 +65,7 @@ body {
    */
 
   --shadow-1: 0 8px 20px 0 hsla(0, 0%, 0%, 0.05);
-  --shadow-2: 0px 3px 20px hsla(217, 90%, 43%, 0.053);
+  --shadow-2: 0px 3px 20px hsla(0, 94%, 49%, 0.2);
    
     /**
    * BORDER RADIUS
@@ -85,7 +88,7 @@ body {
    * TRANSITION
    */
 
-  --transition-1: 0.50s ease;
+  --transition-1: 0.25s ease;
   --transition-2: 0.5s ease;
   --cubic-in: cubic-bezier(0.51, 0.03, 0.64, 0.28);
   --cubic-out: cubic-bezier(0.05, 0.83, 0.52, 0.97);
@@ -111,7 +114,7 @@ body {
    left:0;
    width: 100%;
    padding: 2rem 9%;
-   background-color: rgba(9, 188, 188, 0.212);
+   background: var(--bg-oxford-blue);
    display: flex;
    justify-content: space-between;
    align-items: center;
@@ -122,13 +125,13 @@ body {
 }
 .logo {
   font-size: 2.5rem;
-  color: black;
+  color: var(--text-color);
   font-weight: 600;
   cursor: default;
 }
 #nav-menu a {
   font-size: 1.7rem;
-  color: black;
+  color: var(--text-color);
   margin-left: 3rem;
 } 
 
@@ -137,7 +140,7 @@ body {
   list-style: none;
   display: flex;
  
-  background-color: transparent;
+  background: var(--bg-oxford-blue);
 }
 #nav-menu a:hover,
 #nav-menu a.active {
@@ -145,7 +148,7 @@ body {
 }
 #menu-icon {
   font-size: 3.6rem;
-  color: black;
+  color: var(--text-color);
   display: none;
 }
 
@@ -153,15 +156,12 @@ body {
 
 .home {
   display: flex;
-  justify-content: center;
-  align-items: center;
   justify-content: space-between;
- 
+  align-items: center;
 }
 .home-img img {
   width: 35vw;
-  margin-right:0px;
-  animation: floatImage 4s ease-in-out infinite; */
+  animation: floatImage 4s ease-in-out infinite;
 }
 @keyframes floatImage {
   0% {
@@ -270,17 +270,29 @@ span {
   #about {
     text-align: center;
     justify-content: center;
+
+    font-size: 30px;
     align-items: center;
     gap: 2rem;
-   background-color: rgba(9, 188, 188, 0.212);
+    background: var(--bg-oxford-blue);
+  }
+   
+  #about h2{
+   padding-top: 15px;
+    font-size: 26px;
+   
+  }
+  
+  #about h4{
+    padding-top: 35px;
+     font-size: 26px;
     
-  }
-  #user-detail-intro{
-    width: 90%;
-    text-align: justify;
-    font-size: 22px;
-    color: rgba(36, 34, 34, 0.961);
-  }
+   }
+   #about p{
+    padding-top: 15px;
+     font-size: 20px;
+    
+   }
   
   .heading {
     text-align: center;
@@ -289,12 +301,10 @@ span {
   
   .about-content h3 {
     text-align: left;
-    line-height: 1.5;
-    margin-top: 20px;
-
+    line-height: 1.2;
   }
   .about-content h3 {
-    font-size: 3rem;
+    font-size: 2.6rem;
   }
   .about-content p {
     font-size: 1.6rem;
@@ -302,15 +312,7 @@ span {
     text-align: left;
   }
   
-  .flex{
-    display: flex;
-    width: 90%;
-    margin: auto;
-    margin-top: 20px;
-  }
-  .gif{
-    margin-top: 20px;
-  }
+  
   /*-----------------------------------*\
     #SKILSS 
   \*-----------------------------------*/
@@ -331,7 +333,7 @@ span {
   
   .skills-container .skills-card-1 {
     flex: 1 1 30rem;
-    background-color: rgba(9, 188, 188, 0.212);
+    background: var(--bg-oxford-blue);
     padding: 3rem 2rem 4rem;
     border-radius: 2rem;
     text-align: center;
@@ -361,7 +363,7 @@ span {
   \*-----------------------------------*/
   
   .project {
-    background-color: rgba(9, 188, 188, 0.212);
+    background: var(--bg-oxford-blue);
   }
   .project h2 {
     margin-bottom: 4rem;
@@ -370,7 +372,7 @@ span {
     display: grid;
     grid-template-columns: repeat(2,1fr);
     align-items: center;
-    gap: .5rem;
+    gap: 2.5rem;
   }
   
   .project-container .project-card {
@@ -395,7 +397,7 @@ span {
     left: 0;
     width: 100%;
     height: 100%;
-    background: linear-gradient(rgba(0, 0, 0, .1), var(--bg-prussian-blue) );
+    background: linear-gradient(rgba(250, 64, 64, 0.1), var(--bg-prussian-blue) );
     display: flex;
     justify-content: center;
     align-items: center;
@@ -535,7 +537,7 @@ span {
   width: 100%;
   /* color: var(--second-bg-color); */
   background: var(--);
-  background-color: rgba(9, 188, 188, 0.212);
+  background: var(--bg-oxford-blue);
   text-align: center;
 }
 
@@ -544,7 +546,7 @@ span {
 }
 
 .contact_me {
-  color: black;
+  color: #fff;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -565,7 +567,6 @@ span {
 
 .contact_me > p {
   margin-bottom: 20px;
-
 }
 
 
@@ -620,19 +621,19 @@ span {
   align-items: center;
   flex-wrap: wrap;
   padding: 2rem 9%;
-  background-color: var(--bg-color);
+  background: var(--second-bg-color);
 }
 
 .footer-text p {
   font-size: 1.6rem;
-  color:white;
+
 }
 .footer-iconTop a {
   display: inline-block;
   justify-content: center;
   align-items: center;
   padding: .8rem;
-  background-color: var(--bg-color);
+  background: var(--bg-carolina-blue);
   border-radius: .8rem;
   transition: .5s ease;
 }
@@ -693,9 +694,8 @@ span {
       top: 100%;
       left: 0;
       width: 100%;
-   
-      background-color: rgba(9, 188, 188, 0.212);
-      border-top: .1rem solid rgba(0, 0, 0, .2);
+      background: var(--bg-oxford-blue);
+      border-top: .1rem solid rgba(250, 52, 52, 0.2);
       box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
       display: none;
     }
