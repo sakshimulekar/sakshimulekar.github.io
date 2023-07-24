@@ -131,7 +131,6 @@ body {
   margin-left: 3rem;
 } 
 
-
 #nav-menu {
   list-style: none;
   display: flex;
@@ -422,7 +421,7 @@ span {
   /*-----------------------------------*\
     #Contact
   \*-----------------------------------*/
-/*   
+   
   .contact {
     color: var(--bg-prussian-blue);
   }
@@ -430,7 +429,21 @@ span {
   .contact h2 {
     margin-bottom: 3rem;
   }
-  
+  #contact .contact_me {
+    margin-top: 10px;
+    width: 50%;
+    margin: auto;
+  }
+  #contact .contact_me p {
+     font-size: large;
+     margin: 10px 0px;
+     text-align: center;
+  }
+  #contact .contact_me div{
+    
+    margin: auto;
+    width: 20%;
+  }
   .contact form {
     max-width: 70rem;
     margin: 1rem auto;
@@ -464,6 +477,7 @@ span {
     margin-top: 2rem;
     cursor: pointer;
   }
+
   /*-----------------------------------*\
     #Tech Stacks
   \*-----------------------------------*/
@@ -509,22 +523,12 @@ span {
     color: #7d91b0;
   }
 
-
-  
-
-
-
-
-
-
 .project-link {
   text-align: center;
   outline: 0;
   text-decoration: none;
   cursor: pointer;
 }
-
-
 
 .project-link:hover i {
   color: var(--bg-carolina-blue);
@@ -563,10 +567,8 @@ span {
   padding: 2rem 9%;
   background: var(--second-bg-color);
 }
-
 .footer-text p {
   font-size: 1.6rem;
-
 }
 .footer-iconTop a {
   display: inline-block;
@@ -621,10 +623,8 @@ span {
     #github-top-langs {
       width: 80%;
     }
-
-
-
   }
+
   @media (max-width: 768px) {
     #menu-icon {
       display: block;
@@ -679,8 +679,7 @@ margin-bottom: 3rem;
   grid-template-columns: repeat(1, 1fr);
 }
 
-
-  }
+}
 
   @media (max-width: 450px){
     html {
@@ -706,7 +705,7 @@ margin-bottom: 3rem;
     }
   }
   .calender {
-margin: 20px;
+    margin: 20px;
   }
 
   @media (min-width: 575px) {
@@ -727,9 +726,7 @@ margin: 20px;
       bottom: -200px;
       left: -20px;
     }
-    
     .shape-2 { left: 60px; }
-
   }
   /* contact form */
 
