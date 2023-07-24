@@ -9,7 +9,7 @@ menuIcon.onclick = () => {
 };
 
 // *=============================== github calender ==================================
-    GitHubCalendar(".calendar","sakshimulekar");
+    GitHubCalendar(".calendar","");
 
     // or enable responsive functionality:
     GitHubCalendar(".calendar","sakshimulekar",{ responsive: true });
