@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Data</title>
+</head>
+<body>
+    <h2>Update Data</h2>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.name.label_tag }} {{ form.name }}
+        <input type="submit" value="Update">
+    </form>
+</body>
+</html>

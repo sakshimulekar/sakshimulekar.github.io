@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Read Data</title>
+</head>
+<body>
+    <h2>Read Data</h2>
+    {% for data_id, data in data_dict.items %}
+        <p>Data ID: {{ data_id }}</p>
+        <p>Name: {{ data.name }}</p>
+        <a href="{% url 'delete_user' user_id=data_id %}">Delete Account</a>
+        <hr>
+        
+    {% endfor %}
+    <a href="{% url 'create' %}">Add Data</a>
+
+</body>
+</html>

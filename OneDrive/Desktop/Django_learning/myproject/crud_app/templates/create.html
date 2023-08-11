@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Create Data</title>
+</head>
+<body>
+    <h2>Create Data</h2>
+    <form method="post">
+        {% csrf_token %}
+        <label for="key">Key:</label>
+        <input type="text" id="key" name="key"><br><br>
+        <label for="value">Value:</label>
+        <input type="text" id="value" name="value"><br><br>
+        <input type="submit" value="Submit">
+        
+    </form>
+</body>
+</html>
