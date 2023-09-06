@@ -4,6 +4,7 @@ import { View, Text, Image, SafeAreaView,ScrollView } from 'react-native';
 import FitnessCard from '../components/FitnessCard';
 import { FitnessItems } from '../Context/Context';
 
+
 export default function HomeScreen() {
   const {workout,mins,calories} = useContext(FitnessItems)
   const navigation = useNavigation();
@@ -50,6 +51,7 @@ export default function HomeScreen() {
             }}
           />
         </View>
+        
         </View>
         <FitnessCard />
       </View>
