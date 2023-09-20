@@ -892,7 +892,7 @@ margin-bottom: 3rem;
 
   @media (max-width: 450px){
     body{
-      border: solid green;
+      /* border: solid green; */
       width: 130%;
     }
     .project-container{
@@ -920,22 +920,43 @@ margin-bottom: 3rem;
       /*  */
     }
     body{
-      border: solid red;
+      /*border: solid red;
       /* width: 250%; */
-      margin-left: 10px;
+      margin-left: 20px;
       padding-right: 20px;
       padding-left: 20px;
     }
     .header{
-      border: solid blue;
+      /* border: solid blue; */
       
     }
-    .menu-icon{
+    #menu-icon{
       text-align: right;
-      padding-left: 80px;
+      margin-left: 350px;
+
+    }
+    #nav-menu{
+      margin-left: 10px;
+    }
+    #resume-link-1{
+      display: flex;
+      
+    }
+    #resume-link-2{
+      margin: 10px 0px;
+    padding: 10px 0px 10px 10px;
+    width: 120px;
+    text-align: center;
+    display: flex;
+    justify-content: space-evenly;
+    }
+    .home-img{
+      margin-left: 70px;
     }
     .home-img img {
       width: 90vw;
+      margin: auto;
+      
     }
     .footer {
       flex-direction: column-reverse;
