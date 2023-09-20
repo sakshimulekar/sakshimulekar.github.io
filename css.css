@@ -908,14 +908,27 @@ margin-bottom: 3rem;
   }
   @media (max-width: 365px){
     *{
-      width: 100%;
+      /* width: 100%; */
       margin: auto;
       /*  */
     }
+    .gif img{
+      width: 90%;
+    }
+    .tech-sk{
+      font-size: 15px;
+    padding: 10px 0px;
+    }
+    .tech-sk h5 {
+      font-size: 15px;
+      /* padding: 10px 0px; */
+      /* margin: 0px 20px 0px 20px; */
+      text-align: center;
+  }
     body{
       /*border: solid red;
       /* width: 250%; */
-      margin-left: 20px;
+      /* margin-left: 10px; */
       padding-right: 20px;
       padding-left: 20px;
     }
@@ -947,9 +960,17 @@ margin-bottom: 3rem;
     .bxl-github .bxl-linkedin{
       margin-left: 6px;
     }
-    .home-img{
-      margin-left: 70px;
+    /* .home-img{
+      margin-left: 10px;
+    } */
+    .about-content h3{
+      margin-top: 10px;
     }
+    about-content p {
+      
+      margin: 2rem 0 3rem;
+      text-align: justify;
+  }
     .home-img img {
       width: 90vw;
       margin: auto;
