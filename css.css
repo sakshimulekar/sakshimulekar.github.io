@@ -891,6 +891,10 @@ margin-bottom: 3rem;
   }
 
   @media (max-width: 450px){
+    body{
+      border: solid green;
+      width: 130%;
+    }
     .project-container{
     
 
@@ -910,6 +914,26 @@ margin-bottom: 3rem;
 }
   }
   @media (max-width: 365px){
+    *{
+      width: 100%;
+      margin: auto;
+      /*  */
+    }
+    body{
+      border: solid red;
+      /* width: 250%; */
+      margin-left: 10px;
+      padding-right: 20px;
+      padding-left: 20px;
+    }
+    .header{
+      border: solid blue;
+      
+    }
+    .menu-icon{
+      text-align: right;
+      padding-left: 80px;
+    }
     .home-img img {
       width: 90vw;
     }
