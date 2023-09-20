@@ -948,6 +948,11 @@ margin-bottom: 3rem;
       display: flex;
       
     }
+    .bx-menu:before {
+      content: "\eb5f";
+      /* border: solid blue; */
+      margin-left: 280px;
+    }
     #resume-link-2{
       /* border: solid red; */
       margin: 10px 0px;
