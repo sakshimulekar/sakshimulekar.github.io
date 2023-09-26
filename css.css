@@ -18,20 +18,9 @@ body {
   background-color: #041b24;
   color: var(--text-color);
   /* color: var(--text-shadow-blue); */ 
-
-
-  
-
 }
 
 :root {
-
-    /**
-     * COLORS
-     */
-  
-     
-    /** Background colors */
     --bg-wild-blue-yonder: rgb(96, 157, 248);
     --bg-carolina-blue:#18FFFF;
     --bg-prussian-blue: rgb(44, 98, 172);
@@ -50,9 +39,6 @@ body {
     --text-carolina-blue: hsla(199, 89%, 49%, 1);
     --text-shadow-blue: hsla(217, 24%, 59%, 1);
     --text-slate-gray: hsla(217, 17%, 48%, 1);
-  
-  
-  
     /** Border colors */
     --border-wild-blue-yonder: hsla(216, 33%, 68%, 1);
     --border-prussian-blue: hsla(216, 33%, 20%, 1);
@@ -102,7 +88,23 @@ body {
     --fontFamily-noto_sans: 'Noto Sans', sans-serif;  
   
   }
-
+  .calendar {
+    font-family: Helvetica, arial;
+    text-align: center;
+    border: 0.5px solid ; 
+    border-radius: 10px;
+    height: fit-content;
+   min-height: 80px;
+    padding: 20px;
+    margin: 10px;
+    /* margin: 0 auto; */
+    
+}
+.calendar img{
+  width:100%;
+  height:fit-content;
+  /* border: solid; */
+}
   section {
 
     min-height: 70vh;
@@ -309,8 +311,7 @@ span {
    }
    #about p{
     padding-top: 15px;
-     font-size: 20px;
-    
+     font-size: 18px;
    }
   
   .heading {
@@ -358,6 +359,7 @@ span {
     text-align: center;
     border: .2rem solid var(--border-prussian-blue);
     transition: .5s ease;
+
   }
   .skills-container .skills-card-1:hover {
     border-color: var(--bg-carolina-blue);
@@ -493,9 +495,10 @@ margin-top: 15px;
  }
 
  .project-github-link{
-  border: solid rgb(189, 242, 17);
+  /* border: solid rgb(189, 242, 17);
   height: 50px;
-  width: 100px;
+  width: 700px; */
+  align-items: center;
  }
 
   .project-card img {
@@ -530,7 +533,17 @@ margin-top: 15px;
     font-size: 3rem;
   }
   .project-tech-stack {
-    font-size: 2rem;
+    display: flex;
+    /* border: solid; */
+    width: 40%;
+    margin: 10px auto;
+    justify-content: center;
+    gap: 2px;
+  }
+  .project-tech-stack img{
+    width: 50px;
+    height: 50px;
+    margin: auto;
   }
   .project-layer p {
     font-size: 1.5rem;
@@ -950,9 +963,12 @@ margin-bottom: 3rem;
     }
     .bx-menu:before {
       content: "\eb5f";
-      /* border: solid blue; */
       margin-left: 280px;
     }
+    /*.bx-menu:before {
+        content: "\eb5f";
+    } */
+    
     #resume-link-2{
       /* border: solid red; */
       margin: 10px 0px;
@@ -988,10 +1004,7 @@ margin-bottom: 3rem;
       margin-top: 2rem;
     }
   }
-  .calender {
-margin: 20px;
-  }
-
+  
   @media (min-width: 575px) {
     .home { position: relative; }
 
