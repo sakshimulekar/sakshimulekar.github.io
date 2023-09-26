@@ -836,9 +836,11 @@ margin-top: 15px;
       border-top: .1rem solid rgba(250, 52, 52, 0.2);
       box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
       display: none;
+      
     }
     #nav-menu.active {
       display: block;
+      /* margin-left: 20px; */
     } 
     a.nav-link.skills {
       padding: 0;
@@ -847,6 +849,7 @@ margin-top: 15px;
       display: block;
       font-size: 2rem;
       margin: 3rem 0;
+     padding-left: 30px;
     }
   .home {
     flex-direction: column;
@@ -955,7 +958,7 @@ margin-bottom: 3rem;
 
     } */
     #nav-menu{
-      margin-left: 10px;
+      padding-left: 50px;
     }
     #resume-link-1{
       display: flex;
